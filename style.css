@@ -1,0 +1,107 @@
+.attribution {color:white; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+  background-color: hsl(217, 54%, 11%);  
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  font-family: 'Outfit', sans-serif;
+  min-width: 250px;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  margin: 2rem;
+  box-shadow: -4px 8px 49px 6px rgba(0,0,0,0.56);
+
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.625rem;
+  transition: 0.5s;
+  display: block;
+}
+
+.avatar {
+  max-width: 30px;
+  max-height: 30px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+.background {
+  background-image: url("images/activated.png");
+  background-size: cover;
+  border-radius: 0.625rem;
+}
+
+
+p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+    
+}
+
+h1 {
+  color:hsl(0, 0%, 100%);
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right {
+  float:right;
+}
+
+.infopanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.infodetail {
+  display: flex;
+  flex-direction: row;
+  flex:0.35;
+  align-items:center;
+}
+
+.svg {
+  display:block;
+  margin-right: 5px;
+}
+
+hr {
+  color:hsl(215, 32%, 27%);
+  opacity:0.1;
+  
+}
+span {
+  color:hsl(0, 0%, 100%);  
+}
+
+span:hover, h1:hover {
+    color: hsl(178, 84%, 48%);
+    cursor:pointer;
+    
+}
+
+.image:hover {
+  cursor: pointer;
+  opacity: 0;
+}
+
+@media (min-width:350px){
+  .container {
+        width:  300px;
+    }
+}
